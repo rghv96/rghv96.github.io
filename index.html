@@ -1,1 +1,163 @@
-Hello World
+<html>
+<head>
+	<title>Welcome</title>
+
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif' rel='stylesheet' type='text/css'>
+
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	
+  	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
+	<script src="js/modernizr.js"></script>
+  	<link rel = "stylesheet" href = "css/main.css">
+
+</head>
+<body>
+<main>
+	<nav class="navbar navbar-default">
+  		<div class="container">
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      		  		<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      			</button>
+      			
+  		  	</div>
+    	<div class="collapse navbar-collapse" id="myNavbar">
+    		<ul class="nav navbar-nav navbar-right">
+        		<li><a href="#aboutme">About me</a></li>
+        		<li><a href="#cd-team">Projects</a></li>
+      		</ul>
+    	</div>
+  	</div>
+	</nav>
+	
+	<section class = "cd-section cd-placeholder-1">
+	<div class = "cd-container">
+		<img src = "img/raghav.jpg" class = "img-responsive img-circle margin" width = "350" height = "350" style = "display:inline" alt = "me">
+		<h1>Raghav Sethi</h1>
+		<h2>Student | IIT Mandi</h2>
+		<div class = "im-centered">
+			<div class="row">
+				<div class="col-md-4"><a href="https://www.facebook.com/rghv96" role="button" target="_blank"><img src="img/fb.png"></a></div>
+				<div class="col-md-4"><a href="mailto:raghavsethi96@gmail.com" role="button" target="_blank"><img src="img/mail.png"></a></div>
+				<div class="col-md-4"><a href="https://in.linkedin.com/in/raghav-sethi-676b27b0" role="button" target="_blank"><img src="img/lin.png"></a></div>
+			</div>
+		</div>
+	</div>
+	</section>
+	
+	<section id="aboutme" class = "cd-section cd-placeholder-2">
+	<div class = "cd-container">
+		<h2 class = "margin">About me</h2>
+		<p>My name is Raghav and I am 20 years old. I am pursuing BTech in Computer Science in IIT Mandi. I love running and am learning how to play guitar. I am an avid learner and currently I am exploring different fields of Computer Science. Here's my <a href = "resume_raghav_sethi.pdf">resume</a>.</p>
+	</div>
+	</section>
+
+	<section id="cd-team" class="cd-section">
+			<div class="cd-container">
+				<h2>My Projects</h2>
+				<ul>
+					<li>
+						<a href="#0" data-type="member-1">
+							<figure>
+								<img src="img/3d1.JPG" alt="Team member 1">
+								<div class="cd-img-overlay"><span>View details</span></div>
+							</figure>
+
+							<div class="cd-member-info">
+								3D Holographic Projector <span>Course Project</span>
+							</div> <!-- cd-member-info -->
+						</a>
+					</li>
+					
+					<li>
+						<a href="#0" data-type="member-2">
+							<figure>
+								<img src="img/m1.jpg" alt="Team member 1">
+								<div class="cd-img-overlay"><span>View details</span></div>
+							</figure>
+
+							<div class="cd-member-info">
+								Medical Record Automation <span>Course Project</span>
+							</div> <!-- cd-member-info -->
+						</a>
+					</li>
+
+					<li>
+						<a href="#0" data-type="member-3">
+							<figure>
+								<img src="img/p1.jpg" width="100" height="240" alt="Team member 1">
+								<div class="cd-img-overlay"><span>View details</span></div>
+							</figure>
+
+							<div class="cd-member-info">
+								Password based Door Lock System <span>COURSE PROJECT</span>
+							</div> <!-- cd-member-info -->
+						</a>
+					</li>
+				</ul>
+			</div> <!-- cd-container -->
+		</section> <!-- cd-team -->
+
+		<!-- <section id="footer"><center><p>&copy; Raghav Sethi</p></section></center> -->
+
+		<div class="cd-overlay"></div>
+</main>
+	<div class="cd-member-bio member-1">
+		<div class="cd-member-bio-pict">
+			<img src="img/3d2.jpg" alt="Member Bio image">
+		</div> <!-- cd-member-bio-pict -->
+
+		<div class="cd-bio-content">
+			<h1 class="margin">3D Holographic Projector</h1>
+			<h2 class="margin" >DESIGN PRACTICUM | Mar 2016 – May 2016</h2>
+			<p>Won 3rd prize out of 19 Teams</p>
+<p>Created a product which solved the problem of 3D visualization by creating 3D projections
+inside a glass pyramid which can be controlled through hand gestures or remote. Leap Motion Sensor was used to detect hand gestures. The aim
+was to make classrooms smarter and has applications in various other fields including
+designing and architecture, marketing and entertainment.</p>
+<p>Worked in Unity 3D Engine, Leap Motion Sensor, Arduino and OpenCV</p>
+			
+		</div> <!-- cd-bio-content -->
+	</div> <!-- cd-member-bio -->
+
+	<div class="cd-member-bio member-2">
+		<div class="cd-member-bio-pict">
+			<img src="img/m1.jpg" alt="Member Bio image">
+		</div> <!-- cd-member-bio-pict -->
+
+		<div class="cd-bio-content">
+			<h1 class="margin">Medical Record Automation</h1>
+			<h2 class="margin">DATABASE PRACTICUM | Sep 2015 – Nov 2015</h2>
+			<p>Developed a website for a hospital where patients can book appointments with doctors and
+doctors also can edit and see patient records.</p>
+<p>Worked in MySQL, PHP, HTML, CSS, JavaScript, Bootstrap</p>
+			
+		</div> <!-- cd-bio-content -->
+	</div> <!-- cd-member-bio -->
+
+	<div class="cd-member-bio member-3">
+		<div class="cd-member-bio-pict">
+			<img src="img/p2.jpg" alt="Member Bio image">
+		</div> <!-- cd-member-bio-pict -->
+
+		<div class="cd-bio-content">
+			<h1 class="margin">Password Based Door Lock System</h1>
+			<h2 class="margin">APPLIED ELECTRONICS | Mar 2015- May 2015</h2>
+			<p>Developed a model in which a person has to enter correct pin in a keypad which then
+powers a motor to unlock the door. The pin could be changed by the user</p>
+<p>Worked on Arduino</p>
+			
+		</div> <!-- cd-bio-content -->
+	</div> <!-- cd-member-bio -->
+	<a href="#0" class="cd-member-bio-close">Close</a> <!-- close the author bio section -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script> <!-- Gem jQuery -->
+</body>
+</html>

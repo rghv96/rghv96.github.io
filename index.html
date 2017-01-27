@@ -1,10 +1,10 @@
-<html>
+	<html>
 <head>
 	<title>Home</title>
 
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif' rel='stylesheet' type='text/css'>
+  	<link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif' rel='stylesheet' type='text/css'>
 
   	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -19,14 +19,30 @@
 	<link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
 	<script src="js/modernizr.js"></script>
 	<script src="js/main.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   	
 
 </head>
 <body>
 <main>
-
-
+	<nav class="navbar navbar-default">
+  		<div class="container">
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      		  		<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      			</button>
+      			
+  		  	</div>
+    	<div class="collapse navbar-collapse" id="myNavbar">
+    		<ul class="nav navbar-nav navbar-right">
+        		<li><a href="#aboutme">About me</a></li>
+        		<li><a href="#cd-team">Projects</a></li>
+      		</ul>
+    	</div>
+  	</div>
+	</nav>
 	
 	
 	<section class = "cd-section cd-placeholder-1">
@@ -60,7 +76,12 @@
 	<section id="aboutme" class = "cd-section cd-placeholder-2">
 	<div class = "cd-container">
 		<h2 class = "margin">About me</h2>
+<<<<<<< HEAD
 		<p>My name is Raghav and I am pursuing BTech in Computer Science in IIT Mandi. I love running and play guitar. I am an avid learner and currently I am exploring different fields of Computer Science. Here's my <a href = "https://docs.google.com/document/d/1XwrsxKU53Ig9PwqTzGp8-aGh-2S_pKuHp8jhi40q9IU/edit?usp=sharing">resume</a>.</p>
+=======
+		<p>I am a third year Computer Science student at IIT Mandi. I live in Sonepat, Haryana. My two and a half years at college have been a great learning experience where I have honed my technical as well as soft skills. My hobbies are playing guitar and table tennis.</p>
+		<p>I am very passionate about developing intriguing softwares that uses technology to fulfill human needs. Also, I am a self driven, hardworking and a result oriented individual who loves to challenge oneself and solve complex problems. Here's my <a href = "raghav_sethi.pdf">resume</a>.</p>
+>>>>>>> 68aa892a079262294c2e8fd75795a0ab7b03ee90
 	</div>
 	</section>
 
@@ -68,6 +89,19 @@
 			<div class="cd-container">
 				<h2>My Projects</h2>
 				<ul>
+					<li>
+						<a href="#0" data-type="member-4">
+							<figure>
+								<img src="img/messenger.png" alt="Team member 1">
+								<div class="cd-img-overlay"><span>View details</span></div>
+							</figure>
+
+							<div class="cd-member-info">
+								Facebook Messenger Quotebot <span>Application Development</span>
+							</div> <!-- cd-member-info -->
+						</a>
+					</li>
+					
 					<li>
 						<a href="#0" data-type="member-1">
 							<figure>
@@ -80,7 +114,7 @@
 							</div> <!-- cd-member-info -->
 						</a>
 					</li>
-					
+
 					<li>
 						<a href="#0" data-type="member-2">
 							<figure>
@@ -114,6 +148,21 @@
 
 		<div class="cd-overlay"></div>
 </main>
+	<div class="cd-member-bio member-4">
+		<div class="cd-member-bio-pict">
+			<img src="img/messenger.png" alt="Member Bio image">
+		</div> <!-- cd-member-bio-pict -->
+
+		<div class="cd-bio-content">
+			<h1 class="margin">Facebook Messenger Quotebot</h1>
+			<h2 class="margin" >APPLICATION DEVELOPMENT | JULY 2016</h2>
+			<p><a href ="http://m.me/myquotebot">Click here to use it</a></p>
+			<p>Built an automated messenger bot that can respond with a unique quote (from internet) based on keywords by the user. Used Facebook’s Send/Receive API and Flask framework for web request handling</p>
+
+			
+		</div> <!-- cd-bio-content -->
+	</div> <!-- cd-member-bio -->
+
 	<div class="cd-member-bio member-1">
 		<div class="cd-member-bio-pict">
 			<img src="img/3d2.jpg" alt="Member Bio image">
@@ -122,7 +171,7 @@
 		<div class="cd-bio-content">
 			<h1 class="margin">3D Holographic Projector</h1>
 			<h2 class="margin" >DESIGN PRACTICUM | Mar 2016 – May 2016</h2>
-			<p>Won 3rd prize out of 19 Teams</p>
+			
 <p>Created a product which solved the problem of 3D visualization by creating 3D projections
 inside a glass pyramid which can be controlled through hand gestures or remote. Leap Motion was used to detect hand gestures. The aim
 was to make classrooms smarter and has applications in various other fields including

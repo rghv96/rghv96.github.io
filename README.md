@@ -1,3 +1,3 @@
 # rghv96.github.io
-# my  own website
+# my very own website
 

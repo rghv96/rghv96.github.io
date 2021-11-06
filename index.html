@@ -1,104 +1,18 @@
-	
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163882898-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+---
+layout: default
+---
 
-    gtag('config', 'UA-163882898-1');
-  </script>
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-  <title>Raghav Sethi</title>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/academicons.min.css">
-  <style>
-    a.plain-black {
-      text-decoration: none;
-      color: black;
-      margin: 5px;
-    }
-  </style>
-</head>
-<body style="padding-bottom: 2rem; padding-top: 2rem">
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <h1>Raghav Sethi</h1>
-
-      <p>
-	
-       <!-- <a class="plain-black" href="mailto:raghavsethi96@gmail.com"><i class="fa fa-2x fa-envelope"></i></a>
-        <a class="plain-black" href="https://github.com/rghv96"><i class="fa fa-2x fa-github"></i></a>
-        <a class="plain-black" href="https://in.linkedin.com/in/raghav-sethi-676b27b0"><i class="fa fa-2x fa-linkedin"></i></a>
-        <a class="plain-black" href="https://facebook.com/rghv96"><i class="fa fa-2x fa-facebook"></i></a> -->
-	<a href="mailto:raghavsethi96@gmail.com">Email</a>
-	<a href="https://github.com/rghv96">Github</a>
-	<a href="https://in.linkedin.com/in/raghav-sethi-676b27b0">LinkedIn</a>
-	
-	      
-
-        <br style="display: block; content: ''; margin-top: .6em">
-      </p>
-
-      <p>
-        I am Software Engineer currently working at Grab, Singapore who is passionate about developing intriguing softwares that uses technology to fulfill human needs. I have ~2.5 years of experience and completed my undergrad in Computer Science from IIT Mandi in 2018. I am looking forward to opportunities where I can use my theoretical knowledge and put it into more practical use. Here's my <a href="raghav_sethi.pdf">resume</a>.
-      </p>
-
-      <hr>
-
-      <h2>Projects</h2>
-      <p>
-        <a href="raghav_mtp_report.pdf"><strong>BIOGAN: Fingerprint Domain Adaption</strong></a><br>
-        Generated high-quality biometric fingerprints by adding a trained Siamese neural network to CycleGAN. With this new model, fingerprints of one domain could be converted to other. 
-      </p>
-
-
-      <p>
-        <a href="https://github.com/rghv96/Alfred"><strong>Facebook Messenger Quotebot</strong></a><br>
-        Built an automated messenger bot that can respond with quotes and images to keywords by user. Used Facebook Send/Receive API and Flask python framework for web request handling
-
-      </p>
-
-      <p>
-        <strong>Concept Lattice using Titan Graph Database</strong><br>
-        Stored and queried a Concept Lattice stored in Titan distributed Graph Database. Used Hadoop and HBase at the storage backend
-      </p>
-
-      <p>
-        <strong>iitpipe Driver</strong><br>
-        Implemented pipe by building a Kernel Module to pipe two programs with delay. Measured performance of the pipe by using different delay and buffer sizes
-      </p>
-
-      <p>
-        <strong>3D Holographic Projector</strong><br>
-        Created a product which displayed 3D-projections inside a glass
-        pyramid that can be manipulated by hand gestures. Solved the problem of 3D visualization through the product using leap motion technology. This project won 3rd prize at the college level Design Practicum Open House.
-      </p>
-
-      <p>
-        <strong>Medical Record Automation</strong><br>
-         Developed a web portal that enabled patients to book appointments
-         online and retrieve medical records. Accessed information that was stored in a MySQL database
-      </p>
-
-      <p>
-        <strong>Password Based Door Lock System</strong><br>
-         Implemented a model in which a person has to enter correct pin in a keypad which then powers a motor connected to Arduino to unlock the door. Option to change the password was provided.
-      </p>
-
-     
-    </div>
-  </div>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
 </div>
-</body>
-</html>

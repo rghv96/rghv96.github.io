@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IITPipe Driver - Building a Custom Kernel Module for Delayed Piping – Raghav Sethi – CS Grad at Virginia Tech</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Piping is a powerful feature in Unix-like operating systems that allows programs to communicate with each other, passing data from the output of one program to the input of another. However, standard piping is instantaneous, with no delay between the two programs. This can lead to issues if the programs require a delay between them, such as for synchronization or testing purposes. To address this issue, we have implemented a custom kernel module, IITPipe Driver, which provides delayed piping capabilities.
+
+" />
+    <meta property="og:description" content="Piping is a powerful feature in Unix-like operating systems that allows programs to communicate with each other, passing data from the output of one program to the input of another. However, standard piping is instantaneous, with no delay between the two programs. This can lead to issues if the programs require a delay between them, such as for synchronization or testing purposes. To address this issue, we have implemented a custom kernel module, IITPipe Driver, which provides delayed piping capabilities.
+
+" />
+    
+    <meta name="author" content="Raghav Sethi" />
+
+    
+    <meta property="og:title" content="IITPipe Driver - Building a Custom Kernel Module for Delayed Piping" />
+    <meta property="twitter:title" content="IITPipe Driver - Building a Custom Kernel Module for Delayed Piping" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Raghav Sethi - CS Grad at Virginia Tech" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://avatars.githubusercontent.com/u/15385067?s=400&u=d016b129f854299a7f5f29efaed18ccfec9d50f6&v=4" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Raghav Sethi</a></h1>
+            <p class="site-description">CS Grad at Virginia Tech</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <!-- <a href="/projects">Projects</a> -->
+            <a href="/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>IITPipe Driver - Building a Custom Kernel Module for Delayed Piping</h1>
+
+  <div class="entry">
+    <p>Piping is a powerful feature in Unix-like operating systems that allows programs to communicate with each other, passing data from the output of one program to the input of another. However, standard piping is instantaneous, with no delay between the two programs. This can lead to issues if the programs require a delay between them, such as for synchronization or testing purposes. To address this issue, we have implemented a custom kernel module, IITPipe Driver, which provides delayed piping capabilities.</p>
+
+<p>The IITPipe Driver module works by adding a configurable delay between the output of one program and the input of the next. This delay is implemented using a buffer, which stores the data from the first program until the delay period has passed, at which point it is passed on to the second program. The module is built using the Linux kernel’s module interface, allowing it to be loaded and unloaded dynamically as needed.</p>
+
+<p>To measure the performance of the IITPipe Driver module, we conducted a series of tests using different delay and buffer sizes. We measured the time it took for data to pass through the pipe and compared it to the same data passed through a standard pipe with no delay. Our results showed that the IITPipe Driver module added a measurable delay, with longer delays resulting in longer processing times. However, even with significant delays, the performance of the IITPipe Driver module was still comparable to that of a standard pipe.</p>
+
+<p>The IITPipe Driver module has several potential use cases, including in synchronization and testing scenarios. For example, it could be used to simulate network latency for testing networked applications. It could also be used to coordinate the timing of multiple programs, ensuring that they execute in a specific order.</p>
+
+  </div>
+
+  <div class="date">
+    Written on May 23, 2017
+  </div>
+
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:raghavsethi96@gmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/rghv96"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/rghv96"><i class="svg-icon github"></i></a>
+<a href="https://instagram.com/_rghv"><i class="svg-icon instagram"></i></a>
+<a href="https://www.linkedin.com/in/rghv96"><i class="svg-icon linkedin"></i></a>
+
+
+<a href="https://www.twitter.com/rghv96"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-163882898-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/IITPipeDriver/',
+		  'title': 'IITPipe Driver - Building a Custom Kernel Module for Delayed Piping'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

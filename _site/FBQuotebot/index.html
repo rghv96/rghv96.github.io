@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Type2Learn - My first Chrome Extension – Raghav Sethi – CS Grad at Virginia Tech</title>
+    <title>Building a Facebook Messenger Quotebot with Python Flask – Raghav Sethi – CS Grad at Virginia Tech</title>
 
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -9,18 +9,18 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
     
-    <meta name="description" content="I am a big fan of productivity tools and always wanted to build a chrome extension. The browser extensions are really powerful as you can run almost arbitrary Javascript over the DOM of any webpage. I had enjoyed practicing touch typing and racing with my friends online. Hitting two birds with one stone, I created Type2Learn  - a browswer extension to practice touch typing and concentrate on your webpage. You can monitor your speed, errors you make, and accuracy in real-time!
+    <meta name="description" content="Facebook Messenger is one of the most popular messaging platforms with millions of active users. In recent years, businesses and individuals have started to use chatbots to automate their communication with customers and friends. Chatbots can help save time and provide quick responses to common questions.
 
 " />
-    <meta property="og:description" content="I am a big fan of productivity tools and always wanted to build a chrome extension. The browser extensions are really powerful as you can run almost arbitrary Javascript over the DOM of any webpage. I had enjoyed practicing touch typing and racing with my friends online. Hitting two birds with one stone, I created Type2Learn  - a browswer extension to practice touch typing and concentrate on your webpage. You can monitor your speed, errors you make, and accuracy in real-time!
+    <meta property="og:description" content="Facebook Messenger is one of the most popular messaging platforms with millions of active users. In recent years, businesses and individuals have started to use chatbots to automate their communication with customers and friends. Chatbots can help save time and provide quick responses to common questions.
 
 " />
     
     <meta name="author" content="Raghav Sethi" />
 
     
-    <meta property="og:title" content="Type2Learn - My first Chrome Extension" />
-    <meta property="twitter:title" content="Type2Learn - My first Chrome Extension" />
+    <meta property="og:title" content="Building a Facebook Messenger Quotebot with Python Flask" />
+    <meta property="twitter:title" content="Building a Facebook Messenger Quotebot with Python Flask" />
     
 
     <!--[if lt IE 9]>
@@ -55,19 +55,27 @@
 
     <div id="main" role="main" class="container">
       <article class="post">
-  <h1>Type2Learn - My first Chrome Extension</h1>
+  <h1>Building a Facebook Messenger Quotebot with Python Flask</h1>
 
   <div class="entry">
-    <p>I am a big fan of productivity tools and always wanted to build a chrome extension. The browser extensions are really powerful as you can run almost arbitrary Javascript over the DOM of any webpage. I had enjoyed practicing touch typing and racing with my friends online. Hitting two birds with one stone, I created <a href="https://chrome.google.com/webstore/detail/type2learn/fhaenfmnpmhafnbamailokcjjbpmehig?ref=producthunt">Type2Learn</a>  - a browswer extension to practice touch typing and concentrate on your webpage. You can monitor your speed, errors you make, and accuracy in real-time!</p>
+    <p>Facebook Messenger is one of the most popular messaging platforms with millions of active users. In recent years, businesses and individuals have started to use chatbots to automate their communication with customers and friends. Chatbots can help save time and provide quick responses to common questions.</p>
 
-<p><img src="/images/demo.gif" width="600" /></p>
+<p>Alfred - the Quotebot is a simple automated bot that can respond with quotes and images to keywords entered by the user. The bot uses the Facebook Send/Receive API to handle incoming messages and Flask to handle web requests.</p>
 
-<p>I took some time to launch it as I wanted to create an easy user experience which I believe still can be improved. I launched the extension on <a href="https://www.producthunt.com/posts/type2learn-chrome-extension">Product Hunt</a> and posted on online forums to attract some users. It has got 50+ installs across the globe. Do check it out!</p>
+<p><strong>Implementation</strong></p>
+
+<p>The first step in building the Quotebot is to create a Facebook Page and a Facebook App. The Facebook App will be used to access the Send/Receive API. Once the App is created, we need to generate an access token that will be used to authenticate requests to the API.</p>
+
+<p>Next, we will create a Python Flask web application to handle incoming messages from Facebook. We will use the Flask-RESTful library to create a RESTful API endpoint that will handle incoming messages. The endpoint will parse the incoming message and extract any keywords that match the list of quotes we have in our database.</p>
+
+<p>The Quotebot will then use a simple algorithm to select a random quote from a website and send it back to the user along with an image related to the quote.</p>
+
+<p>Finally, we will deploy our Flask application to a hosting service like Heroku.</p>
 
   </div>
 
   <div class="date">
-    Written on March  1, 2022
+    Written on August  4, 2016
   </div>
 
   
@@ -105,8 +113,8 @@
 
 		ga('create', 'UA-163882898-1', 'auto');
 		ga('send', 'pageview', {
-		  'page': '/Type2learn/',
-		  'title': 'Type2Learn - My first Chrome Extension'
+		  'page': '/FBQuotebot/',
+		  'title': 'Building a Facebook Messenger Quotebot with Python Flask'
 		});
 	</script>
 	<!-- End Google Analytics -->

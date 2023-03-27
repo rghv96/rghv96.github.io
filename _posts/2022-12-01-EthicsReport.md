@@ -15,4 +15,4 @@ We also considered the legal implications of AI-generated content ownership. Sin
 
 Overall, the report presented a comprehensive analysis of the ethical implications of AI-generated content ownership. It highlighted the need for stakeholders to work together to develop a clear and ethical framework for content ownership in the age of AI. By considering the perspectives of different stakeholders and analyzing the ethical and legal implications of various scenarios, we were able to provide a comprehensive and nuanced perspective on this important topic.
 
-Full Report [here](../documents/raghav_bachelors_thesis.pdf)
+Full Report [here](../documents/AI_final_report.pdf)
